@@ -1,0 +1,17 @@
+{
+  "name": "solidity-oracle",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Bitcoin price oracle using CoinMarketCap and viem",
+  "main": "oracle.js",
+  "scripts": {
+    "oracle": "node oracle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "viem": "^2.41.2"
+  }
+}
