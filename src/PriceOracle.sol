@@ -2,17 +2,17 @@
 pragma solidity ^0.8.13;
 
 contract PriceOracle {
-    uint256 private price;
+    uint256 private value;
 
-    event PriceUpdated(uint256 oldPrice, uint256 newPrice);
+    event ValueUpdated(uint256 oldValue, uint256 newValue);
 
-    function setPrice(uint256 _price) external {
-        uint256 oldPrice = price;
-        price = _price;
-        emit PriceUpdated(oldPrice, _price);
+    function setValue(uint256 _value) external {
+        uint256 oldValue = value;
+        value = _value;
+        emit ValueUpdated(oldValue, _value);
     }
 
-    function getPrice() external view returns (uint256) {
-        return price;
+    function getValue() external view returns (uint256) {
+        return value;
     }
 }
